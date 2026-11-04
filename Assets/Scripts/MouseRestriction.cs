@@ -6,11 +6,16 @@ public class MouseRestriction : MonoBehaviour
     [SerializeField] RectTransform FakeMouse;
     [SerializeField] Canvas Canvas;
     private RectTransform canvasRect;
+
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
     private void Awake()
     {
         canvasRect = Canvas.GetComponent<RectTransform>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (Mouse.current == null)
         {
