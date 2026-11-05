@@ -1769,10 +1769,10 @@ RectTransform:
   - {fileID: 1239459768}
   m_Father: {fileID: 1636006399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -350}
-  m_SizeDelta: {x: 1700, y: 250}
+  m_AnchorMin: {x: 0.057000004, y: 0.06025926}
+  m_AnchorMax: {x: 0.9426042, y: 0.29133338}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286507219
 MonoBehaviour:
@@ -1823,6 +1823,7 @@ GameObject:
   - component: {fileID: 1402645758}
   - component: {fileID: 1402645760}
   - component: {fileID: 1402645759}
+  - component: {fileID: 1402645761}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1888,6 +1889,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402645757}
   m_CullTransparentMesh: 1
+--- !u!114 &1402645761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402645757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c86600a14a6c9499a211c4dffb0923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UITransparentMask
+  draggedRect: {fileID: 0}
+  graphic: {fileID: 0}
+  materialInstance: {fileID: 0}
+  originalMaterial: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!1 &1467859147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2021,7 @@ GameObject:
   - component: {fileID: 1566800488}
   - component: {fileID: 1566800490}
   - component: {fileID: 1566800489}
+  - component: {fileID: 1566800491}
   m_Layer: 5
   m_Name: Ventana 1
   m_TagString: Untagged
@@ -2044,10 +2063,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: ab5c500e62cdede4bbb4075dac128eab, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 1, y: 1, z: 1, w: 1}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2059,7 +2078,7 @@ MonoBehaviour:
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1566800490
@@ -2070,6 +2089,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566800487}
   m_CullTransparentMesh: 1
+--- !u!114 &1566800491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566800487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e168df35fa9831e4d8cce05919baf8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DragUIManager
 --- !u!1 &1636006395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,8 +2169,8 @@ Canvas:
   m_GameObject: {fileID: 1636006395}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2205,10 +2236,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2052762325}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.25, y: 0.25}
+  m_AnchorMax: {x: 0.75000006, y: 0.75000006}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1922677005
 MonoBehaviour:
@@ -2343,10 +2374,10 @@ RectTransform:
   - {fileID: 1922677004}
   m_Father: {fileID: 1636006399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -651, y: -175}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchorMin: {x: 0.057000004, y: 0.29133338}
+  m_AnchorMax: {x: 0.26500002, y: 0.38414815}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052762326
 MonoBehaviour:
@@ -2577,6 +2608,7 @@ GameObject:
   - component: {fileID: 2127144377}
   - component: {fileID: 2127144376}
   - component: {fileID: 2127144378}
+  - component: {fileID: 2127144379}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2632,6 +2664,21 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1636006395}
   textName: {fileID: 1922677005}
   dialogueText: {fileID: 1239459769}
+--- !u!114 &2127144379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127144375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea4d47318e38f104c83044dcd09c6258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShaderManager
+  mainPanel: {fileID: 1402645758}
+  currentDragObject: {fileID: 1566800488}
+  maskMaterial: {fileID: 2100000, guid: ab5c500e62cdede4bbb4075dac128eab, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
