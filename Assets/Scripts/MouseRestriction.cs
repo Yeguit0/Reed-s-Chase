@@ -6,10 +6,12 @@ public class MouseRestriction : MonoBehaviour
     [SerializeField] RectTransform FakeMouse;
     [SerializeField] Canvas Canvas;
     private RectTransform canvasRect;
+    private bool cursorLocked = true;
 
     private void Start()
     {
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
     private void Awake()
     {
@@ -23,32 +25,56 @@ public class MouseRestriction : MonoBehaviour
         }
         updateFakeMouse();
     }
+
+    private void Update()
+    {
+        if (Keyboard.current != null && Keyboard.current.pKey.wasPressedThisFrame)
+        {
+            cursorLocked = !cursorLocked;
+
+            Cursor.lockState = cursorLocked ? CursorLockMode.Confined : CursorLockMode.None;
+            Cursor.visible = !cursorLocked;
+        }
+    }
+
     private void updateFakeMouse()
     {
         Vector2 screenPosition = Mouse.current.position.ReadValue();
 
-        if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPosition, Canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : Canvas.worldCamera, out Vector2 canvasPosition))
+        if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            ComputerPanel,
+            screenPosition,
+            Canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : Canvas.worldCamera,
+            out Vector2 mousePosition))
         {
             return;
         }
 
-        Vector3 worldPosition = canvasRect.TransformPoint(canvasPosition);
-        Vector3 panelLocalPosition = ComputerPanel.InverseTransformPoint(worldPosition);
-
-        Vector2 mousePosition = new Vector2(panelLocalPosition.x, panelLocalPosition.y);
-
-        Vector2 panelSize = ComputerPanel.rect.size;
         Vector2 mouseSize = FakeMouse.rect.size;
 
-        float MinX = ComputerPanel.rect.xMin + mouseSize.x * FakeMouse.pivot.x;
-        float MaxX = ComputerPanel.rect.xMax - mouseSize.x * (1f - FakeMouse.pivot.x);
+        float minX = ComputerPanel.rect.xMin + mouseSize.x * FakeMouse.pivot.x;
+        float maxX = ComputerPanel.rect.xMax - mouseSize.x * (1f - FakeMouse.pivot.x);
 
-        float MinY = ComputerPanel.rect.yMin + mouseSize.y * FakeMouse.pivot.y;
-        float MaxY = ComputerPanel.rect.yMax - mouseSize.y * (1f - FakeMouse.pivot.y);
+        float minY = ComputerPanel.rect.yMin + mouseSize.y * FakeMouse.pivot.y;
+        float maxY = ComputerPanel.rect.yMax - mouseSize.y * (1f - FakeMouse.pivot.y);
 
-        mousePosition.x = Mathf.Clamp(mousePosition.x, MinX, MaxX);
-        mousePosition.y = Mathf.Clamp(mousePosition.y, MinY, MaxY);
+        mousePosition.x = Mathf.Clamp(mousePosition.x, minX, maxX);
+        mousePosition.y = Mathf.Clamp(mousePosition.y, minY, maxY);
 
         FakeMouse.anchoredPosition = mousePosition;
+
+        Vector3 worldPosition = ComputerPanel.TransformPoint(mousePosition);
+
+        Vector2 clampedScreenPosition = RectTransformUtility.WorldToScreenPoint(
+            Canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : Canvas.worldCamera,
+            worldPosition
+        );
+
+        if (Vector2.Distance(screenPosition, clampedScreenPosition) > 1f)
+        {
+            Mouse.current.WarpCursorPosition(clampedScreenPosition);
+        }
     }
+
+
 }

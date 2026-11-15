@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Testeo 2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: "Dale pues, gracias ah\xED marico"
-  hasChoices: 0
-  choice1: 
-  nextDialogue1: {fileID: 0}
-  choice2: 
-  nextDialogue2: {fileID: 0}
+  hasChoices: 1
+  choice1: a
+  nextDialogue1: {fileID: 11400000, guid: d2371e8361dad5a4bba94eb2ef1de4c7, type: 2}
+  choice2: b
+  nextDialogue2: {fileID: 11400000, guid: d2371e8361dad5a4bba94eb2ef1de4c7, type: 2}

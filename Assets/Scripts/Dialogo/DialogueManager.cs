@@ -12,11 +12,16 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Referencias de la UI")]
     public GameObject dialoguePanel;
-    public TextMeshProUGUI dialogueText;
 
+    [Header("Chat (ScrollView)")]
+    public ScrollRect scrollRect;
+    public Transform content;               // El objeto Content del ScrollView
+    public GameObject npcMessagePrefab;     // Burbuja del NPC
+    public GameObject playerMessagePrefab;  // Burbuja del jugador
+
+    [Header("Botones de respuesta")]
     public Button button1;
     public Button button2;
-
     public TextMeshProUGUI buttonText1;
     public TextMeshProUGUI buttonText2;
 
@@ -26,13 +31,17 @@ public class DialogueManager : MonoBehaviour
     private DialogueNode currentNode;
     private Coroutine autoAdvanceCoroutine;
 
+    void Start()
+    {
+        StartDialogue();
+    }
+
     public void StartDialogue()
     {
         dialoguePanel.SetActive(true);
         dialogueStarted = true;
 
         currentNode = dialogueData;
-
         DisplayCurrentNode();
     }
 
@@ -49,13 +58,16 @@ public class DialogueManager : MonoBehaviour
     IEnumerator DisplayText()
     {
         isTyping = true;
-        dialogueText.text = "";
+
+        // Crea una burbuja nueva del NPC y escribe dentro de ella
+        TMP_Text bubbleText = CreateMessage(npcMessagePrefab, "");
 
         string currentLine = currentNode.dialogueText;
 
         foreach (char letter in currentLine)
         {
-            dialogueText.text += letter;
+            bubbleText.text += letter;
+            ScrollToBottom();
             yield return new WaitForSeconds(typingSpeed);
         }
 
@@ -82,12 +94,19 @@ public class DialogueManager : MonoBehaviour
         button1.onClick.RemoveAllListeners();
         button2.onClick.RemoveAllListeners();
 
-        button1.onClick.AddListener(() => SelectChoice(currentNode.nextDialogue1));
-        button2.onClick.AddListener(() => SelectChoice(currentNode.nextDialogue2));
+        button1.onClick.AddListener(() => SelectChoice(currentNode.choice1, currentNode.nextDialogue1));
+        button2.onClick.AddListener(() => SelectChoice(currentNode.choice2, currentNode.nextDialogue2));
     }
 
-    private void SelectChoice(DialogueNode nextNode)
+    private void SelectChoice(string chosenText, DialogueNode nextNode)
     {
+        // Oculta los botones y muestra la respuesta como burbuja del jugador
+        button1.gameObject.SetActive(false);
+        button2.gameObject.SetActive(false);
+
+        CreateMessage(playerMessagePrefab, chosenText);
+        ScrollToBottom();
+
         if (nextNode == null)
         {
             EndDialogue();
@@ -116,5 +135,21 @@ public class DialogueManager : MonoBehaviour
     public void CloseDialogue()
     {
         EndDialogue();
+    }
+
+    // ---------- Utilidades del chat ----------
+
+    private TMP_Text CreateMessage(GameObject prefab, string text)
+    {
+        GameObject msg = Instantiate(prefab, content);
+        TMP_Text tmp = msg.GetComponentInChildren<TMP_Text>();
+        tmp.text = text;
+        return tmp;
+    }
+
+    private void ScrollToBottom()
+    {
+        Canvas.ForceUpdateCanvases();
+        scrollRect.verticalNormalizedPosition = 0f;
     }
 }
