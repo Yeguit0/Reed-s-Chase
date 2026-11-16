@@ -12,6 +12,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] GameObject CreditsPanel;
     [SerializeField] GameObject SettingsPanel;
 
+    private bool settingsVisible = false;
+
     public void ChangeScene(string SceneToLoad)
     {
         SceneManager.LoadScene(SceneToLoad);
@@ -24,7 +26,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public void Menu_OpenSettings()
     {
-
+        settingsVisible = !settingsVisible;
+        SettingsPanel.SetActive(settingsVisible);
     }
 
     public void Out_QuitGameButton()
