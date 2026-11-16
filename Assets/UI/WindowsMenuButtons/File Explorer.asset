@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: File Explorer
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   nombreItem: File Explorer
-  portada: {fileID: 0}
+  portada: {fileID: 21300000, guid: 19975836d66dbf64eb8388059215c521, type: 3}

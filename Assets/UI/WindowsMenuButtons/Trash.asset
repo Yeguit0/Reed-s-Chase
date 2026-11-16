@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Trash
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   nombreItem: Trash
-  portada: {fileID: 0}
+  portada: {fileID: 21300000, guid: 593b7e27a7775aa4fba2dfd469fc9ba2, type: 3}

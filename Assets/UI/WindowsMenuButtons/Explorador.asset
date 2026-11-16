@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Explorador
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   nombreItem: Internet Explorer
-  portada: {fileID: 21300000, guid: 3a6991481118b464c89bf4bacdf3bd9b, type: 3}
+  portada: {fileID: 21300000, guid: 4013fb83d2da12a4681275361a79bc66, type: 3}
