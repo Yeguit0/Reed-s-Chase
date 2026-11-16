@@ -4204,6 +4204,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781662054}
     m_Modifications:
+    - target: {fileID: 1826341142860676870, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
+      propertyPath: ScreenPanel
+      value: 
+      objectReference: {fileID: 1402645758}
     - target: {fileID: 3146656199034943577, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6694,6 +6698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragUIManager
   dragHandle: {fileID: 0}
+  ScreenPanel: {fileID: 0}
 --- !u!114 &1113024279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8211,7 +8216,7 @@ MonoBehaviour:
   m_text: Button
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7725a1efdb6173f4cbf87c60682273f7, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -6012754339816842123, guid: 7725a1efdb6173f4cbf87c60682273f7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9060,6 +9065,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.5283019
       objectReference: {fileID: 0}
+    - target: {fileID: 1826341142860676870, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
+      propertyPath: ScreenPanel
+      value: 
+      objectReference: {fileID: 1402645758}
     - target: {fileID: 3146656199034943577, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9835,6 +9844,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781662054}
     m_Modifications:
+    - target: {fileID: 1826341142860676870, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
+      propertyPath: ScreenPanel
+      value: 
+      objectReference: {fileID: 1402645758}
     - target: {fileID: 3146656199034943577, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11424,6 +11437,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781662054}
     m_Modifications:
+    - target: {fileID: 1826341142860676870, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
+      propertyPath: ScreenPanel
+      value: 
+      objectReference: {fileID: 1402645758}
+    - target: {fileID: 1826341142860676870, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
+      propertyPath: percentageToReturn
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 3123479178312933402, guid: 53855ff2cea38734c98ada2eb7ca2591, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -11586,7 +11607,7 @@ MonoBehaviour:
   m_text: Button
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7725a1efdb6173f4cbf87c60682273f7, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -6012754339816842123, guid: 7725a1efdb6173f4cbf87c60682273f7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
