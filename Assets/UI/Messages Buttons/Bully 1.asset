@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695ec375614d573409ef0f40c054f24b, type: 3}
   m_Name: Bully 1
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
-  nombreItem: Bully 1
+  nombreItem: Marcus
   portada: {fileID: 0}

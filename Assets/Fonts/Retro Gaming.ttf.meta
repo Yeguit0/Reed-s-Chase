@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc017418a9b2f284da29cba611ade34e
+guid: 86a8fe0c3d0ee894bb2481e4804439be
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,7 +8,8 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontNames: []
+  fontNames:
+  - Retro Gaming
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

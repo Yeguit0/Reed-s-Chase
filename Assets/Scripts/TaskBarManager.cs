@@ -1,9 +1,9 @@
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TaskBarManager : MonoBehaviour
 {
-
     [Header("Taskbar")]
     public GameObject taskbarButton;
 
