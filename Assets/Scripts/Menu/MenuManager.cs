@@ -5,18 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    [Header("Scenes")]
-    [SerializeField] string SceneChanger;
-
     [Header("UI")]
     [SerializeField] GameObject CreditsPanel;
     [SerializeField] GameObject SettingsPanel;
+    private Animator anim;
 
     private bool settingsVisible = false;
 
-    public void ChangeScene(string SceneToLoad)
+    private void Start()
     {
-        SceneManager.LoadScene(SceneToLoad);
+        anim = GetComponent<Animator>();
+    }
+
+    public void StartChange()
+    {
+        anim.SetTrigger("Start");
+    }
+
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene(1);
     }
 
     public void Menu_OpenCredits()

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "NewDialogueNode", menuName = "Scriptable Objects/OpeningDialogue")]
 public class OpeningDialogue : ScriptableObject
@@ -7,6 +8,9 @@ public class OpeningDialogue : ScriptableObject
     [TextArea(3, 5)]
     public string nameText;
     public string dialogueText;
+
+    [Header("Animación de la cara")]
+    public RuntimeAnimatorController faceAnimation;
 
     [Header("Respuestas")]
     public bool hasChoices;

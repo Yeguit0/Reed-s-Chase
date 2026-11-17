@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
-  nameText: Reed
-  dialogueText: Marico me pican las bolas
+  nameText: Mrs.Chase
+  dialogueText: Oh. You must be Hunter. Come in, come in.
+  faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 
   nextDialogue1: {fileID: 0}
@@ -21,4 +22,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 150a75bf6d502174ca994def0fb93f25, type: 2}

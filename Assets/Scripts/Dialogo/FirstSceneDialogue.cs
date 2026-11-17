@@ -1,7 +1,9 @@
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class FirstSceneDialogue : MonoBehaviour
 {
@@ -12,8 +14,12 @@ public class FirstSceneDialogue : MonoBehaviour
 
     [Header("Referencias de la UI")]
     public GameObject dialoguePanel;
+    public Animator characters;
     public TextMeshProUGUI characterNameText;
     public TextMeshProUGUI dialogueText;
+    private Animator anim;
+    public GameObject faceAnim;
+    private Animator faceAnimator;
 
     public Button button1;
     public Button button2;
@@ -31,7 +37,9 @@ public class FirstSceneDialogue : MonoBehaviour
 
     private void Start()
     {
-        //StartDialogue();
+        anim = GetComponent<Animator>();
+        faceAnimator = faceAnim.GetComponent<Animator>();
+        characters.gameObject.SetActive(true);
     }
 
     public void StartDialogue()
@@ -51,6 +59,13 @@ public class FirstSceneDialogue : MonoBehaviour
         button1.gameObject.SetActive(false);
         button2.gameObject.SetActive(false);
         button3.gameObject.SetActive(false);
+
+        characters.gameObject.SetActive(true);
+
+        if (currentNode.faceAnimation != null)
+        {
+            faceAnimator.runtimeAnimatorController = currentNode.faceAnimation;
+        }
 
         StartCoroutine(DisplayText());
     }
@@ -75,12 +90,10 @@ public class FirstSceneDialogue : MonoBehaviour
         {
             ShowChoices();
         }
-
         else
         {
             autoAdvanceCoroutine = StartCoroutine(WaitAndNextLine());
         }
-
     }
 
     private void ShowChoices()
@@ -114,7 +127,6 @@ public class FirstSceneDialogue : MonoBehaviour
         DisplayCurrentNode();
     }
 
-
     IEnumerator WaitAndNextLine()
     {
         yield return new WaitForSeconds(waitTimeBetweenLines);
@@ -130,17 +142,24 @@ public class FirstSceneDialogue : MonoBehaviour
         }
     }
 
-
     private void EndDialogue()
     {
         StopAllCoroutines();
 
         dialogueStarted = false;
         isTyping = false;
+        dialoguePanel.SetActive(false);
+        characters.gameObject.SetActive(false);
+        anim.SetTrigger("End");
     }
 
     public void CloseDialogue()
     {
         EndDialogue();
+    }
+
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene(2);
     }
 }
