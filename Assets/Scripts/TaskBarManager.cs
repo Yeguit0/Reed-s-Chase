@@ -1,37 +1,37 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TaskBarManager : MonoBehaviour
 {
-    [Header("Taskbar")]
-    public GameObject taskbarButton;
+    [System.Serializable]
+    public class Entry
+    {
+        public GameObject target;  
+        public Buttons data;      
+        public Button button;     
+    }
 
-    private Button button;
+    [SerializeField] private Entry[] entries; 
 
     private void Start()
     {
-        button = taskbarButton.GetComponent<Button>();
+        for (int i = 0; i < entries.Length; i++)
+        {
+            Entry e = entries[i];
 
-        taskbarButton.SetActive(false);
-
-        button.onClick.AddListener(ToggleWindow);
+            e.button.image.sprite = e.data.portada;       
+            e.button.transform.SetSiblingIndex(i);       
+            e.button.onClick.AddListener(() => e.target.transform.SetAsLastSibling()); 
+        }
     }
 
-    public void OpenWindow()
+    private void Update()
     {
-        gameObject.SetActive(true);
-        taskbarButton.SetActive(true);
-    }
-
-    public void CloseWindow()
-    {
-        gameObject.SetActive(false);
-        taskbarButton.SetActive(false);
-    }
-
-    public void ToggleWindow()
-    {
-        gameObject.SetActive(!gameObject.activeSelf);
+        foreach (Entry e in entries)
+        {
+            bool active = e.target.activeSelf;
+            if (e.button.gameObject.activeSelf != active)
+                e.button.gameObject.SetActive(active);
+        }
     }
 }

@@ -1,0 +1,146 @@
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using System.Collections;
+
+public class FirstSceneDialogue : MonoBehaviour
+{
+    [Header("Datos del Dialogo")]
+    [SerializeField] private OpeningDialogue dialogueData;
+    [SerializeField] private float typingSpeed = 0.05f;
+    [SerializeField] private float waitTimeBetweenLines = 1.5f;
+
+    [Header("Referencias de la UI")]
+    public GameObject dialoguePanel;
+    public TextMeshProUGUI characterNameText;
+    public TextMeshProUGUI dialogueText;
+
+    public Button button1;
+    public Button button2;
+    public Button button3;
+
+    public TextMeshProUGUI buttonText1;
+    public TextMeshProUGUI buttonText2;
+    public TextMeshProUGUI buttonText3;
+
+    private bool dialogueStarted = false;
+    private bool isTyping = false;
+
+    private OpeningDialogue currentNode;
+    private Coroutine autoAdvanceCoroutine;
+
+    private void Start()
+    {
+        //StartDialogue();
+    }
+
+    public void StartDialogue()
+    {
+        dialoguePanel.SetActive(true);
+        dialogueStarted = true;
+
+        currentNode = dialogueData;
+
+        DisplayCurrentNode();
+    }
+
+    private void DisplayCurrentNode()
+    {
+        StopAllCoroutines();
+
+        button1.gameObject.SetActive(false);
+        button2.gameObject.SetActive(false);
+        button3.gameObject.SetActive(false);
+
+        StartCoroutine(DisplayText());
+    }
+
+    IEnumerator DisplayText()
+    {
+        isTyping = true;
+        dialogueText.text = "";
+        characterNameText.text = currentNode.nameText;
+
+        string currentLine = currentNode.dialogueText;
+
+        foreach (char letter in currentLine)
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        isTyping = false;
+
+        if (currentNode.hasChoices)
+        {
+            ShowChoices();
+        }
+
+        else
+        {
+            autoAdvanceCoroutine = StartCoroutine(WaitAndNextLine());
+        }
+
+    }
+
+    private void ShowChoices()
+    {
+        button1.gameObject.SetActive(currentNode.nextDialogue1 != null);
+        button2.gameObject.SetActive(currentNode.nextDialogue2 != null);
+        button3.gameObject.SetActive(currentNode.nextDialogue3 != null);
+
+        buttonText1.text = currentNode.choice1;
+        buttonText2.text = currentNode.choice2;
+        buttonText3.text = currentNode.choice3;
+
+        button1.onClick.RemoveAllListeners();
+        button2.onClick.RemoveAllListeners();
+        button3.onClick.RemoveAllListeners();
+
+        button1.onClick.AddListener(() => SelectChoice(currentNode.nextDialogue1));
+        button2.onClick.AddListener(() => SelectChoice(currentNode.nextDialogue2));
+        button3.onClick.AddListener(() => SelectChoice(currentNode.nextDialogue3));
+    }
+
+    private void SelectChoice(OpeningDialogue nextNode)
+    {
+        if (nextNode == null)
+        {
+            EndDialogue();
+            return;
+        }
+
+        currentNode = nextNode;
+        DisplayCurrentNode();
+    }
+
+
+    IEnumerator WaitAndNextLine()
+    {
+        yield return new WaitForSeconds(waitTimeBetweenLines);
+
+        if (currentNode.nextDialogue != null)
+        {
+            currentNode = currentNode.nextDialogue;
+            DisplayCurrentNode();
+        }
+        else
+        {
+            EndDialogue();
+        }
+    }
+
+
+    private void EndDialogue()
+    {
+        StopAllCoroutines();
+
+        dialogueStarted = false;
+        isTyping = false;
+    }
+
+    public void CloseDialogue()
+    {
+        EndDialogue();
+    }
+}

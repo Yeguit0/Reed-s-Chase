@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Messages
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   nombreItem: Messages
-  portada: {fileID: 0}
+  portada: {fileID: 21300000, guid: 9a13c055015042345a2b4251ca528958, type: 3}
