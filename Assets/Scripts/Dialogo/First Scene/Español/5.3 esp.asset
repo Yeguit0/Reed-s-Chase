@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
   m_Name: 5.3 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
-  nameText: Mr.Chase
+  nameText: Sr.Chase
   dialogueText: (An awkward silence) .(Mr. Chase clears his throat from the next
     room.)
   faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}

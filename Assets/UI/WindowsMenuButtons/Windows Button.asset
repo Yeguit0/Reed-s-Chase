@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Windows Button
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   nombreItem: 
-  portada: {fileID: 0}
+  portada: {fileID: 21300000, guid: c25ed39fd056a944ba0b360acacc6127, type: 3}

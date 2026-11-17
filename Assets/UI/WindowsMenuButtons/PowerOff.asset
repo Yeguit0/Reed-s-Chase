@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PowerOff
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   nombreItem: Power Off
-  portada: {fileID: 0}
+  portada: {fileID: 21300000, guid: ad0421a6118e5f0479de2d87c0da8422, type: 3}
