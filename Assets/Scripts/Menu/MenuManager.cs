@@ -29,6 +29,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public void Menu_OpenCredits()
     {
+        if (settingsVisible)
+        {
+            Menu_OpenSettings();
+        }
         StartCoroutine(CreditFunction());
     }
 
