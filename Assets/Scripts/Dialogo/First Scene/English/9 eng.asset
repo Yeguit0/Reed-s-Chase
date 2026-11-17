@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
-  m_Name: 2
+  m_Name: 9 eng
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Mrs.Chase
-  dialogueText: Can I get you something? Juice? We have those little sandwich cookies.
+  dialogueText: "He's a good boy. Quiet. He just\u2026 keeps to himself."
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 
@@ -22,4 +22,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: f9fab3dcab73a05489af169df8bc0beb, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 508231da67c25c641806cd698adf026a, type: 2}

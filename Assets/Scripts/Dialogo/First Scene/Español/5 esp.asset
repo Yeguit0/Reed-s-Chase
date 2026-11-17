@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
+  m_Name: 5 esp
+  m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
+  nameText: Mrs.Chase
+  dialogueText: ' I always told him, "Invite a friend." And now here you are.'
+  faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
+  hasChoices: 1
+  choice1: I'm sorry, Mrs. Chase. I wasn't really his friend.
+  nextDialogue1: {fileID: 11400000, guid: 9e15ac0627581ab47963f54b486dbdaf, type: 2}
+  choice2: I just want to help find him.
+  nextDialogue2: {fileID: 11400000, guid: 1213b930a0f31d44098b71805219322d, type: 2}
+  choice3: (say nothing)
+  nextDialogue3: {fileID: 11400000, guid: 0edb0dc0b55d5d2458a90a4a8326762b, type: 2}
+  nextDialogue: {fileID: 0}

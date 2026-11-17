@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
-  m_Name: 5.3
+  m_Name: 5.2 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
-  nameText: Mr.Chase
-  dialogueText: (An awkward silence) .(Mr. Chase clears his throat from the next
-    room.)
-  faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
+  nameText: Mrs.Chase
+  dialogueText: (She nods quickly) That's all anyone wants.
+  faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 
   nextDialogue1: {fileID: 0}

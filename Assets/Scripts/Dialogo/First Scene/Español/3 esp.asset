@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
-  m_Name: 12
+  m_Name: 3 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
-  nameText: Mr.Chase
-  dialogueText: Don't touch anything important.
-  faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
+  nameText: Hunter
+  dialogueText: No, thank you. I'm fine.
+  faceAnimation: {fileID: 9100000, guid: 8a6b0e75a3d7be14a9ad205d624bbc97, type: 2}
   hasChoices: 0
   choice1: 
   nextDialogue1: {fileID: 0}
@@ -22,4 +22,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: bc00705a22e835e4391cfe03ba60d76e, type: 2}

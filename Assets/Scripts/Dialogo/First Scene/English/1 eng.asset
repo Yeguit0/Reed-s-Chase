@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
-  m_Name: 4
+  m_Name: 1 eng
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Mrs.Chase
-  dialogueText: Reed never brought anyone over, you know. (small laugh)
+  dialogueText: Oh. You must be Hunter. Come in, come in.
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 
@@ -22,4 +22,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: 8f6d12ce4e9128840ab522d8bd094100, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 150a75bf6d502174ca994def0fb93f25, type: 2}

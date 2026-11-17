@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
-  m_Name: 5.1
+  m_Name: 5.1 eng
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Mrs.Chase
   dialogueText: "(smile slips for a second) That's\u2026 alright. You came anyway."
