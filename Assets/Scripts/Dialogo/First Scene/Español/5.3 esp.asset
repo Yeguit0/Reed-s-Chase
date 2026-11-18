@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 5.3 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sr.Chase
-  dialogueText: (An awkward silence) .(Mr. Chase clears his throat from the next
-    room.)
+  dialogueText: "(Un silencio incomodo) .(El Sr. Chase se aclara la garganta desde
+    la otra habitaci\xF3n)."
   otherDialogue: {fileID: 11400000, guid: 0edb0dc0b55d5d2458a90a4a8326762b, type: 2}
   faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
   hasChoices: 0
@@ -24,4 +24,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: 76efd4e9a66df3846b28b1c79dd2bb25, type: 2}
+  nextDialogue: {fileID: 11400000, guid: c76ff533e10e6ea419c1b3618a1c1ca6, type: 2}

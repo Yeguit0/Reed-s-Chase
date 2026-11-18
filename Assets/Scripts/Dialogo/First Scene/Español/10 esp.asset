@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 10 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sr.Chase
-  dialogueText: Is that why you're here? To ask questions?
+  dialogueText: "\xBFEs para eso que estas aqu\xED? \xBFPara hacer preguntas?"
   otherDialogue: {fileID: 11400000, guid: 508231da67c25c641806cd698adf026a, type: 2}
   faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
   hasChoices: 1
-  choice1: Reed talked about the computer a lot. Maybe there's something on it.
-  nextDialogue1: {fileID: 11400000, guid: 6f45a0d28bf8cdc408306076207ac6b3, type: 2}
-  choice2: Can I see his room? Just to look around.
-  nextDialogue2: {fileID: 11400000, guid: 6f45a0d28bf8cdc408306076207ac6b3, type: 2}
+  choice1: "Reed hablaba mucho sobre la computadora. A lo mejor hay algo ah\xED."
+  nextDialogue1: {fileID: 11400000, guid: 1c4a035444fd6124487f38c4983d9183, type: 2}
+  choice2: "\xBFPuedo ver su habitaci\xF3n? Solo para revisar."
+  nextDialogue2: {fileID: 11400000, guid: 1c4a035444fd6124487f38c4983d9183, type: 2}
   choice3: 
   nextDialogue3: {fileID: 0}
   nextDialogue: {fileID: 0}

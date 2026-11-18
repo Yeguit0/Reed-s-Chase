@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 12 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sr.Chase
-  dialogueText: Don't touch anything important.
+  dialogueText: No toques nada importante.
   otherDialogue: {fileID: 11400000, guid: 2ec6b474a95a05f4abba6d8af7c7d2bf, type: 2}
   faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
   hasChoices: 0

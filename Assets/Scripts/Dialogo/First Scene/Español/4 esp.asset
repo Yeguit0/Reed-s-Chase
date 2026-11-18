@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 4 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
-  dialogueText: Reed never brought anyone over, you know. (small laugh)
+  dialogueText: "Reed nunca tra\xEDa a nadie a casa, \xBFsabes? (peque\xF1a risa)"
   otherDialogue: {fileID: 11400000, guid: bc00705a22e835e4391cfe03ba60d76e, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
@@ -23,4 +23,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: 8f6d12ce4e9128840ab522d8bd094100, type: 2}
+  nextDialogue: {fileID: 11400000, guid: ccf57c8058bc66f49b6301c22b9b7720, type: 2}

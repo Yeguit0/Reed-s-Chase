@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 5.1 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
-  dialogueText: "(smile slips for a second) That's\u2026 alright. You came anyway."
+  dialogueText: " (La sonrisa se desvanece por un segundo) Est\xE1 bien.... De todos
+    modos, has venido."
   otherDialogue: {fileID: 11400000, guid: 9e15ac0627581ab47963f54b486dbdaf, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
@@ -23,4 +24,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: 76efd4e9a66df3846b28b1c79dd2bb25, type: 2}
+  nextDialogue: {fileID: 11400000, guid: c76ff533e10e6ea419c1b3618a1c1ca6, type: 2}

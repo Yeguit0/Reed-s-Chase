@@ -23,4 +23,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: bc00705a22e835e4391cfe03ba60d76e, type: 2}
+  nextDialogue: {fileID: 11400000, guid: c98b0fa30ba59134887e0ffb66e53c18, type: 2}

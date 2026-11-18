@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 5 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
-  dialogueText: ' I always told him, "Invite a friend." And now here you are.'
+  dialogueText: " Siempre le dec\xEDa: \"Invita a un amigo\". Y ahora estas aqui"
   otherDialogue: {fileID: 11400000, guid: 8f6d12ce4e9128840ab522d8bd094100, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 1
-  choice1: I'm sorry, Mrs. Chase. I wasn't really his friend.
-  nextDialogue1: {fileID: 11400000, guid: 9e15ac0627581ab47963f54b486dbdaf, type: 2}
-  choice2: I just want to help find him.
-  nextDialogue2: {fileID: 11400000, guid: 1213b930a0f31d44098b71805219322d, type: 2}
-  choice3: (say nothing)
-  nextDialogue3: {fileID: 11400000, guid: 0edb0dc0b55d5d2458a90a4a8326762b, type: 2}
+  choice1: Lo siento, Sra. Chase. No era realmente su amigo.
+  nextDialogue1: {fileID: 11400000, guid: ed319826e3b77044fa20d98686bde4e0, type: 2}
+  choice2: Solo quiero ayudar a encontrarle.
+  nextDialogue2: {fileID: 11400000, guid: 71d4e9e926f27f14e80e9c271cd22523, type: 2}
+  choice3: (no dices nada)
+  nextDialogue3: {fileID: 11400000, guid: 35c98d0b7381a44408a1acf10158c80d, type: 2}
   nextDialogue: {fileID: 0}

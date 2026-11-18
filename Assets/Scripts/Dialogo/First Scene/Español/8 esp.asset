@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sr.Chase
-  dialogueText: (a beat too long) No.
+  dialogueText: "(Un rato despu\xE9s) No."
   otherDialogue: {fileID: 11400000, guid: 1b24d783d01a8a44da6f29f60c4e2acf, type: 2}
   faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
   hasChoices: 0
@@ -23,4 +23,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: d532dfd7683cef041bfe41f8167a076c, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 1345173cb7366ca44b624e53d9b2f7f5, type: 2}

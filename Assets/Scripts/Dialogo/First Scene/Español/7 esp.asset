@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 7 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Hunter
-  dialogueText: Has he done it before?
+  dialogueText: "\xBFLo ha hecho alguna vez antes?"
   otherDialogue: {fileID: 11400000, guid: 47df084b85205904f8f5b2cdc2f090d5, type: 2}
   faceAnimation: {fileID: 9100000, guid: 8a6b0e75a3d7be14a9ad205d624bbc97, type: 2}
   hasChoices: 0
@@ -23,4 +23,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: 1b24d783d01a8a44da6f29f60c4e2acf, type: 2}
+  nextDialogue: {fileID: 11400000, guid: b119fa221bb332042a6e577f0c241368, type: 2}

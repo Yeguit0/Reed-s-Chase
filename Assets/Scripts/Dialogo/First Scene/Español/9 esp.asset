@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 9 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
-  dialogueText: "He's a good boy. Quiet. He just\u2026 keeps to himself."
+  dialogueText: 'Es un buen chico. Tranquilo. El simplemente... se mantiene al margen. '
   otherDialogue: {fileID: 11400000, guid: d532dfd7683cef041bfe41f8167a076c, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
@@ -23,4 +23,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: 508231da67c25c641806cd698adf026a, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 53b45724bf52c544abdebd0b9a7c8109, type: 2}

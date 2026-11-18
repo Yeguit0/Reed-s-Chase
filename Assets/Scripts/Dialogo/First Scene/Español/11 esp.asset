@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 11 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
-  dialogueText: 'His room is just down the hall. I haven''t touched anything. (she
-    stops, her voice cracks slightly) I couldn''t. '
+  dialogueText: "Su habitaci\xF3n esta al final del pasillo. No he tocado nada. (Ella
+    se detiene, su voz se quiebra ligeramente) No pude. "
   otherDialogue: {fileID: 11400000, guid: 6f45a0d28bf8cdc408306076207ac6b3, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
@@ -24,4 +24,4 @@ MonoBehaviour:
   nextDialogue2: {fileID: 0}
   choice3: 
   nextDialogue3: {fileID: 0}
-  nextDialogue: {fileID: 11400000, guid: 2ec6b474a95a05f4abba6d8af7c7d2bf, type: 2}
+  nextDialogue: {fileID: 11400000, guid: eaf31fc4858923f4b98ca758d389f9df, type: 2}
