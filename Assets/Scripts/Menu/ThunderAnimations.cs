@@ -6,6 +6,10 @@ public class ThunderAnimations : MonoBehaviour
 {
     [SerializeField] Light2D Thunderlight;
 
+    [SerializeField] AudioSource Thunder1Sound;
+    [SerializeField] AudioSource Thunder2Sound;
+
+    private bool waitingforthunder = false;
     private IEnumerator IntensityTween(float TargetIntensity, float AnimationDuration)
     {
         float start = Thunderlight.intensity;
@@ -33,15 +37,48 @@ public class ThunderAnimations : MonoBehaviour
     private IEnumerator FirstThunderAnimation()
     {
         yield return new WaitForSeconds(1f);
-        ChangeIntensity(2.5f, 0.15f);
-        yield return new WaitForSeconds(0.25f);
+        ChangeIntensity(2.5f, 0.05f);
+        yield return new WaitForSeconds(0.2f);
+        Thunder1Sound.Play();
         ChangeIntensity(0f, 0.15f);
         yield return new WaitForSeconds(0.1f);
     }
 
-    private void Start()
+    private IEnumerator SecondThunderAnimation()
     {
-        StartCoroutine(FirstThunderAnimation());
+        yield return new WaitForSeconds(0.2f);
+        ChangeIntensity(2.5f, 0.05f);
+        yield return new WaitForSeconds(0.15f);
+        ChangeIntensity(0f, 0.05f);
+        yield return new WaitForSeconds(0.25f);
+        ChangeIntensity(2.5f, 0.05f);
+        yield return new WaitForSeconds(0.2f);
+        Thunder2Sound.Play();
+        ChangeIntensity(0f, 0.15f);
+        yield return new WaitForSeconds(0.1f);
+    }
+
+    private IEnumerator SelectThunder()
+    {
+        waitingforthunder = true;
+        int RandomSelected = Random.Range(1, 3);
+        if (RandomSelected == 1)
+        {
+            StartCoroutine(FirstThunderAnimation());
+        }
+        else
+        {
+            StartCoroutine(SecondThunderAnimation());
+        }
+        yield return new WaitForSeconds(Random.Range(35f, 120f));
+        waitingforthunder = false;
+    }
+    private void Update()
+    {
+        if (!waitingforthunder)
+        {
+            StartCoroutine(SelectThunder());
+        }
     }
 }
 
