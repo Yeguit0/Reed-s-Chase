@@ -11,6 +11,7 @@ public class Clock : MonoBehaviour
     [SerializeField] private int startHour = 16;
     [SerializeField] private int endHour = 22;
     [SerializeField] private float durationMinutes = 15f;
+    public EndGameDialogue endEvent;
 
     [Header("Eventos")]
     [SerializeField] private GameObject objectToActivate;
@@ -23,7 +24,7 @@ public class Clock : MonoBehaviour
     void Start()
     {
         totalGameMinutes = (endHour - startHour) * 60f;
-
+        
         UpdateClock(startHour, 0);
     }
 
@@ -44,10 +45,9 @@ public class Clock : MonoBehaviour
 
         UpdateClock(hours, minutes);
 
-        if (!objectActivated && currentMinutes >= 18 * 60)
+        if (!objectActivated && currentMinutes == 16 * 01)
         {
-            objectToActivate.SetActive(true);
-            objectActivated = true;
+            //endEvent.StartDialogue();
         }
 
         if (progress >= 1f)
