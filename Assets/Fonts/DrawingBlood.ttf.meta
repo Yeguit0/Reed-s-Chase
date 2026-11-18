@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6bae82e7b63c8842b66df0d8ea08c86
+guid: 1235e5d06c174844993f0bf67b8ce97e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Slender
+  - Drawing Blood
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
