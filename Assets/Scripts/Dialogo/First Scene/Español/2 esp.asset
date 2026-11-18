@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: 2 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
-  dialogueText: Can I get you something? Juice? We have those little sandwich cookies.
+  dialogueText: "\xBFTe traigo algo? \xBFJugo? Tenemos de esos peque\xF1os s\xE1dwiches
+    de helado."
+  otherDialogue: {fileID: 11400000, guid: 150a75bf6d502174ca994def0fb93f25, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 

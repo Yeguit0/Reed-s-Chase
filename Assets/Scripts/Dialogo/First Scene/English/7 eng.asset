@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Hunter
   dialogueText: Has he done it before?
+  otherDialogue: {fileID: 11400000, guid: 05609ec9ec5c9b948aa193680796fa15, type: 2}
   faceAnimation: {fileID: 9100000, guid: 8a6b0e75a3d7be14a9ad205d624bbc97, type: 2}
   hasChoices: 0
   choice1: 

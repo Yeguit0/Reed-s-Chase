@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 3 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Hunter
-  dialogueText: No, thank you. I'm fine.
+  dialogueText: No, gracias. Estoy bien.
+  otherDialogue: {fileID: 11400000, guid: f9fab3dcab73a05489af169df8bc0beb, type: 2}
   faceAnimation: {fileID: 9100000, guid: 8a6b0e75a3d7be14a9ad205d624bbc97, type: 2}
   hasChoices: 0
   choice1: 

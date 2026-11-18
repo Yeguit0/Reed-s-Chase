@@ -17,17 +17,22 @@ public class MouseRestriction : MonoBehaviour
     {
         canvasRect = Canvas.GetComponent<RectTransform>();
     }
-    private void FixedUpdate()
-    {
-        if (Mouse.current == null)
-        {
-            return;
-        }
-        updateFakeMouse();
-    }
+    //private void FixedUpdate()
+    //{
+    //    if (Mouse.current == null)
+    //    {
+    //        return;
+    //    }
+    //    updateFakeMouse();
+    //}
 
     private void Update()
     {
+        if (Mouse.current != null)
+        {
+            updateFakeMouse();
+        }
+
         if (Keyboard.current != null && Keyboard.current.pKey.wasPressedThisFrame)
         {
             cursorLocked = !cursorLocked;

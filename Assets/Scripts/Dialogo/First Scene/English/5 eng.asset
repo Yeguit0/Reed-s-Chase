@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Mrs.Chase
   dialogueText: ' I always told him, "Invite a friend." And now here you are.'
+  otherDialogue: {fileID: 11400000, guid: ccf57c8058bc66f49b6301c22b9b7720, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 1
   choice1: I'm sorry, Mrs. Chase. I wasn't really his friend.

@@ -15,6 +15,7 @@ MonoBehaviour:
   nameText: Sra.Chase
   dialogueText: 'His room is just down the hall. I haven''t touched anything. (she
     stops, her voice cracks slightly) I couldn''t. '
+  otherDialogue: {fileID: 11400000, guid: 6f45a0d28bf8cdc408306076207ac6b3, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 

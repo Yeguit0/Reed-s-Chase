@@ -15,6 +15,7 @@ MonoBehaviour:
   nameText: Mr.Chase
   dialogueText: (An awkward silence) .(Mr. Chase clears his throat from the next
     room.)
+  otherDialogue: {fileID: 11400000, guid: 35c98d0b7381a44408a1acf10158c80d, type: 2}
   faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
   hasChoices: 0
   choice1: 

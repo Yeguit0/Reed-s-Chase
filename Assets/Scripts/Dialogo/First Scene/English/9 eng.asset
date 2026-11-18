@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Mrs.Chase
   dialogueText: "He's a good boy. Quiet. He just\u2026 keeps to himself."
+  otherDialogue: {fileID: 11400000, guid: 1345173cb7366ca44b624e53d9b2f7f5, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 

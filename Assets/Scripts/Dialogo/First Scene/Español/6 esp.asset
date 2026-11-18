@@ -15,6 +15,7 @@ MonoBehaviour:
   nameText: Sr.Chase
   dialogueText: (entering, arms crossed) The police said he's probably staying with
     someone. Kids do that.
+  otherDialogue: {fileID: 11400000, guid: 76efd4e9a66df3846b28b1c79dd2bb25, type: 2}
   faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
   hasChoices: 0
   choice1: 

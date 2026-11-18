@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Mr.Chase
   dialogueText: Don't touch anything important.
+  otherDialogue: {fileID: 11400000, guid: eaf31fc4858923f4b98ca758d389f9df, type: 2}
   faceAnimation: {fileID: 9100000, guid: 289bdaf48aee4dd4c923d38797077f71, type: 2}
   hasChoices: 0
   choice1: 

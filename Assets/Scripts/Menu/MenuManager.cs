@@ -8,13 +8,23 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [Header("UI")]
     [SerializeField] GameObject CreditsPanel;
     [SerializeField] GameObject SettingsPanel;
+    [SerializeField] GameObject WarningPanel;
     private Animator anim;
 
     private bool settingsVisible = false;
+    private bool creditsVisible = false;
 
     private void Start()
     {
+        WarningPanel.SetActive(true);
+        Time.timeScale = 0f;
         anim = GetComponent<Animator>();
+    }
+
+    public void CloseWarningPanel()
+    {
+        WarningPanel.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void StartChange()
@@ -33,7 +43,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             Menu_OpenSettings();
         }
-        StartCoroutine(CreditFunction());
+        creditsVisible = !creditsVisible;
+        CreditsPanel.SetActive(creditsVisible);
+        //StartCoroutine(CreditFunction());
+
     }
 
     public void Menu_OpenSettings()
@@ -47,10 +60,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
         Application.Quit();
     }
         
-    IEnumerator CreditFunction()
-    {
-        CreditsPanel.SetActive(true);
-        yield return new WaitForSeconds(10f);
-        CreditsPanel.SetActive(false);
-    }
+    //IEnumerator CreditFunction()
+    //{
+    //    CreditsPanel.SetActive(true);
+    //    yield return new WaitForSeconds(10f);
+    //    CreditsPanel.SetActive(false);
+    //}
 }

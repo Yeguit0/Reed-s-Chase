@@ -1808,6 +1808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957997835}
+  - component: {fileID: 1957997838}
   - component: {fileID: 1957997836}
   - component: {fileID: 1957997837}
   m_Layer: 0
@@ -1882,6 +1883,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1957997838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957997834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8951ff83a08af9b4b8a874acb4e1bb5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LanguageManager
+  isSpanish: 0
+  spanishObjects: []
+  englishObjects: []
 --- !u!1 &2019629744
 GameObject:
   m_ObjectHideFlags: 0

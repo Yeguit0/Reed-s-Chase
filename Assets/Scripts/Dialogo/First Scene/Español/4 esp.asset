@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
   dialogueText: Reed never brought anyone over, you know. (small laugh)
+  otherDialogue: {fileID: 11400000, guid: bc00705a22e835e4391cfe03ba60d76e, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 

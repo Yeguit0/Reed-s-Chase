@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Mrs.Chase
   dialogueText: Oh. You must be Hunter. Come in, come in.
+  otherDialogue: {fileID: 11400000, guid: 8ec2c05f125f1fb40a621b9ae21e478c, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 

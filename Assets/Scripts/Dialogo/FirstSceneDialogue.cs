@@ -33,6 +33,8 @@ public class FirstSceneDialogue : MonoBehaviour
     private bool isTyping = false;
 
     private OpeningDialogue currentNode;
+    private OpeningDialogue localizedNode;
+
     private Coroutine autoAdvanceCoroutine;
 
     private void Start()
@@ -62,9 +64,16 @@ public class FirstSceneDialogue : MonoBehaviour
 
         characters.gameObject.SetActive(true);
 
-        if (currentNode.faceAnimation != null)
+        // Seleccionar idioma
+        bool isSpanish = PlayerPrefs.GetInt("IsSpanish", 0) == 1;
+
+        localizedNode = isSpanish && currentNode.otherDialogue != null
+            ? currentNode.otherDialogue
+            : currentNode;
+
+        if (localizedNode.faceAnimation != null)
         {
-            faceAnimator.runtimeAnimatorController = currentNode.faceAnimation;
+            faceAnimator.runtimeAnimatorController = localizedNode.faceAnimation;
         }
 
         StartCoroutine(DisplayText());
@@ -74,9 +83,9 @@ public class FirstSceneDialogue : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = "";
-        characterNameText.text = currentNode.nameText;
+        characterNameText.text = localizedNode.nameText;
 
-        string currentLine = currentNode.dialogueText;
+        string currentLine = localizedNode.dialogueText;
 
         foreach (char letter in currentLine)
         {
@@ -102,9 +111,9 @@ public class FirstSceneDialogue : MonoBehaviour
         button2.gameObject.SetActive(currentNode.nextDialogue2 != null);
         button3.gameObject.SetActive(currentNode.nextDialogue3 != null);
 
-        buttonText1.text = currentNode.choice1;
-        buttonText2.text = currentNode.choice2;
-        buttonText3.text = currentNode.choice3;
+        buttonText1.text = localizedNode.choice1;
+        buttonText2.text = localizedNode.choice2;
+        buttonText3.text = localizedNode.choice3;
 
         button1.onClick.RemoveAllListeners();
         button2.onClick.RemoveAllListeners();

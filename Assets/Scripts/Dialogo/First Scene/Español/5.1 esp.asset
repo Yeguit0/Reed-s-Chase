@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
   dialogueText: "(smile slips for a second) That's\u2026 alright. You came anyway."
+  otherDialogue: {fileID: 11400000, guid: 9e15ac0627581ab47963f54b486dbdaf, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 

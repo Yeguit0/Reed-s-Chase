@@ -4,33 +4,32 @@ using UnityEngine.InputSystem;
 public class PauseMenuManager : MonoBehaviour
 {
     public GameObject pausePanel;
-    public GameObject gamePanel;
     public bool isPaused = false;
+
     void Start()
     {
-        
+        pausePanel.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        pausePanel.SetActive(isPaused);
+
         if(isPaused)
         {
-            pausePanel.SetActive(true);
-            gameObject.SetActive(false);
+            Time.timeScale = 0f;
         }
         else
         {
-            pausePanel.SetActive(false);
-            gameObject.SetActive(true);
+            Time.timeScale = 1f;
         }
     }
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if (context.performed)
         {
-            isPaused = !isPaused;
+            PauseGame();
         }
     }
 

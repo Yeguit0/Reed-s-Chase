@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
   dialogueText: (She nods quickly) That's all anyone wants.
+  otherDialogue: {fileID: 11400000, guid: 1213b930a0f31d44098b71805219322d, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 

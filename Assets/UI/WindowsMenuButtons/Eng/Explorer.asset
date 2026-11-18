@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 695ec375614d573409ef0f40c054f24b, type: 3}
-  m_Name: Windows Button
+  m_Name: Explorer
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
-  nombreItem: 
-  portada: {fileID: 21300000, guid: c25ed39fd056a944ba0b360acacc6127, type: 3}
+  nombreItem: Internet Explorer
+  portada: {fileID: 21300000, guid: 4013fb83d2da12a4681275361a79bc66, type: 3}

@@ -9,6 +9,9 @@ public class OpeningDialogue : ScriptableObject
     public string nameText;
     public string dialogueText;
 
+    [Header("Otro Idioma")]
+    public OpeningDialogue otherDialogue;
+
     [Header("Animación de la cara")]
     public RuntimeAnimatorController faceAnimation;
 

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 1 esp
   m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
   nameText: Sra.Chase
-  dialogueText: Oh. You must be Hunter. Come in, come in.
+  dialogueText: "Oh, T\xFA debes ser Hunter. Pasa, pasa."
+  otherDialogue: {fileID: 11400000, guid: 13f23914b9e211f40b1240375ec656f6, type: 2}
   faceAnimation: {fileID: 9100000, guid: 28445777408e8df48b7ef8fc73e5ce47, type: 2}
   hasChoices: 0
   choice1: 
