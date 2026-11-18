@@ -41,6 +41,10 @@ public class PauseMenuManager : MonoBehaviour
 
     public void PauseGame()
     {
+        if (isOnSettings)
+        {
+            return;
+        }
         isPaused = !isPaused;
     }
 
