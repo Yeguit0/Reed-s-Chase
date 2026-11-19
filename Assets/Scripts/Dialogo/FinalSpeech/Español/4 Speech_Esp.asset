@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634abacbf3d678c478d4dffcd69c4643, type: 3}
+  m_Name: 4 Speech_Esp
+  m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
+  nameText: 
+  dialogueText: "Si necesitas apoyo ahora mismo:  En Espa\xF1a: Llama al 024 (L\xEDnea
+    de Atenci\xF3n a la Conducta Suicida) o a la Fundaci\xF3n ANAR al 900 20 20 10,
+    el tel\xE9fono de ayuda para ni\xF1os y adolescentes. Tambi\xE9n puedes consultar
+    una lista completa de recursos locales gratuitos en Find A Helpline (Espa\xF1a)."
+  otherDialogue: {fileID: 11400000, guid: 47cc5b70ad9dbc24c975ddbe5d407986, type: 2}
+  faceAnimation: {fileID: 0}
+  hasChoices: 0
+  choice1: 
+  nextDialogue1: {fileID: 0}
+  choice2: 
+  nextDialogue2: {fileID: 0}
+  choice3: 
+  nextDialogue3: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 6b2c2f51766584d4c8737e25ba40e938, type: 2}

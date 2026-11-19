@@ -129,8 +129,8 @@ public class EndGameDialogue : MonoBehaviour
 
         dialogueStarted = false;
         isTyping = false;
-        dialoguePanel.SetActive(false);
-        characters.gameObject.SetActive(false);
+        //dialoguePanel.SetActive(false);
+        //characters.gameObject.SetActive(false);
         anim.SetTrigger("End");
     }
 
@@ -142,5 +142,11 @@ public class EndGameDialogue : MonoBehaviour
     public void ChangeScene()
     {
         SceneManager.LoadScene(2);
+    }
+
+    private IEnumerator PausaAntesDeCerrar()
+    {
+        yield return new WaitForSeconds(1f);
+        EndDialogue();
     }
 }
