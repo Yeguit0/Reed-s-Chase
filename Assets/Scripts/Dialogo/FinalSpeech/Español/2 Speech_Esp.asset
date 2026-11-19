@@ -19,7 +19,7 @@ MonoBehaviour:
     persistentes de tristeza, depresi\xF3n o pensamientos de autolesi\xF3n, el apoyo
     y la recuperaci\xF3n son posibles. Acudir a un amigo, a un familiar o a un profesional
     puede ser el punto de inflexi\xF3n m\xE1s importante."
-  otherDialogue: {fileID: 11400000, guid: b4550866bf81b874d89668f52457dc88, type: 2}
+  otherDialogue: {fileID: 0}
   faceAnimation: {fileID: 0}
   hasChoices: 0
   choice1: 

@@ -17,7 +17,7 @@ MonoBehaviour:
     emocionales profundas puede resultar solitario, dif\xEDcil y envuelto en oscuridad.
     En el mundo real, los problemas de salud mental y los pensamientos suicidas afectan
     a millones de j\xF3venes.\u201D"
-  otherDialogue: {fileID: 11400000, guid: 6d669754bf8165643846eaf85cdd030e, type: 2}
+  otherDialogue: {fileID: 0}
   faceAnimation: {fileID: 0}
   hasChoices: 0
   choice1: 

@@ -24560,7 +24560,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Usuario Blockeado.
+  m_text: Usuario Bloqueado.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7725a1efdb6173f4cbf87c60682273f7, type: 2}
   m_sharedMaterial: {fileID: -6012754339816842123, guid: 7725a1efdb6173f4cbf87c60682273f7, type: 2}
@@ -74772,13 +74772,13 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 478356039}
-  - {fileID: 3513578117382111076}
   - {fileID: 8803509662642123133}
   - {fileID: 1710247376}
   - {fileID: 828694700}
   - {fileID: 1849481872}
   - {fileID: 912845027}
   - {fileID: 409095580}
+  - {fileID: 3513578117382111076}
   m_Father: {fileID: 1781662054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2183282, y: 0.28100002}

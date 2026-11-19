@@ -17,7 +17,7 @@ MonoBehaviour:
     de Atenci\xF3n a la Conducta Suicida) o a la Fundaci\xF3n ANAR al 900 20 20 10,
     el tel\xE9fono de ayuda para ni\xF1os y adolescentes. Tambi\xE9n puedes consultar
     una lista completa de recursos locales gratuitos en Find A Helpline (Espa\xF1a)."
-  otherDialogue: {fileID: 11400000, guid: 47cc5b70ad9dbc24c975ddbe5d407986, type: 2}
+  otherDialogue: {fileID: 0}
   faceAnimation: {fileID: 0}
   hasChoices: 0
   choice1: 

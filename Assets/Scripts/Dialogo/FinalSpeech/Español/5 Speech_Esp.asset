@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogueText: "En Estados Unidos: Llama o env\xEDa un mensaje de texto al 988 (L\xEDnea
     de Prevenci\xF3n del Suicidio y Crisis) o env\xEDa el texto HOME al 741741 para
     contactar con la Crisis Text Line."
-  otherDialogue: {fileID: 11400000, guid: bb45e2135b197594da1611ec33199e88, type: 2}
+  otherDialogue: {fileID: 0}
   faceAnimation: {fileID: 0}
   hasChoices: 0
   choice1: 

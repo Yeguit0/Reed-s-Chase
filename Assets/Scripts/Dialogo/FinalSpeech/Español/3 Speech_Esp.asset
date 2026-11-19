@@ -17,7 +17,7 @@ MonoBehaviour:
     atravesando un momento dif\xEDcil, una crisis personal o tiene pensamientos suicidas,
     hay ayuda confidencial disponible las 24 horas del d\xEDa, los 7 d\xEDas de la
     semana."
-  otherDialogue: {fileID: 11400000, guid: fc35607298853d745b314a9bd2664def, type: 2}
+  otherDialogue: {fileID: 0}
   faceAnimation: {fileID: 0}
   hasChoices: 0
   choice1: 

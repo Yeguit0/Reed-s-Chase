@@ -15,7 +15,7 @@ MonoBehaviour:
   nameText: 
   dialogueText: "Internacional: Encuentra l\xEDneas de ayuda inmediatas, gratuitas
     y confidenciales en tu pa\xEDs en findahelpline.com."
-  otherDialogue: {fileID: 11400000, guid: 00eaecc17ceadf9478f26fd510fd4007, type: 2}
+  otherDialogue: {fileID: 0}
   faceAnimation: {fileID: 0}
   hasChoices: 0
   choice1: 
